@@ -41,15 +41,8 @@
         </header>
 
         <main>
-            <section id="mugClub">
-                <h2>Join Our Mug Club!</h2>
-                <figure>
-                    <img src="images/mug.jpeg" alt="Bullquarian Mug">
-                    <figcaption>
-                        Image Source: <a href="https://www.facebook.com/photo.php?fbid=962915375138488&set=pb.100042601044430.-2207520000&type=3">Bullquarian Brewhouse LLC - Facebook</a>
-                    </figcaption>
-                </figure>
-                <!-- 
+            
+            <!-- 
                     JOIN US - Form
                     - Must contain a form allowing users to join the group or organization. 
                     - Provide content describing the form's purpose
@@ -58,11 +51,20 @@
                     - Radio selections
                     - At least one dropdown selection
                     - At least one input should be required
-                    - Every input must have an associated labe
+                    - Every input must have an associated label
                     - Every input must include a for and id attribute to be connected to its corresponding label
                     - All input must make it to the http://itins3.madisoncollege.edu/echo.php and use the post method. 
-                 -->
-                <p id="clubTag">
+            -->
+            
+            <section id="mugClub">
+                <h2>Join Our Mug Club!</h2>
+                <figure>
+                    <img src="images/mug.jpeg" alt="Bullquarian Mug">
+                    <figcaption>
+                        Image Source: <a href="https://www.facebook.com/photo.php?fbid=962915375138488&set=pb.100042601044430.-2207520000&type=3">Bullquarian Brewhouse LLC - Facebook</a>
+                    </figcaption>
+                </figure>
+                 <p id="clubTag">
                     Are you a beer-loving enthusiast?<br>
                     Are you looking for a home away from home?<br>
                     Look no further, fill out a quick application, join our Mug Club, and all your wishes will come true!<br>
@@ -71,15 +73,41 @@
                     Or at least those that can be fulfilled with beer.
                 </p>
                 <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="name" id="email" required>
-                    <label for="dob">Birthday</label>
-                    <input type="date" id="dob" name="dob">
-                    <label for="comments">Additional Comments</label>
-                    <textarea name="comments" id="comments" placeholder="Additional comments, like, can we sing you 'Happy Birthday?'" cols="30" rows="10"></textarea>
-
+                    <fieldset id="mugID">
+                        <legend>Personal Information</legend>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="name" id="email" required>
+                        <label for="dob">Birthday</label>
+                        <input type="date" id="dob" name="dob">
+                    </fieldset>
+                    <fieldset id="mugPreferences">
+                        <legend>Mug Club Preferences</legend>
+                        <input type="checkbox" id="mugCheck1" value="engraved">
+                        <label for="mugCheck1">Mug Engraved with Initials</label>
+                        <input type="checkbox" id="mugCheck2" value="autoRenew">
+                        <label for="mugCheck2">Automatic Annual Renewal</label>
+                        <p>Mug Motif (choose one):</p>
+                        <input type="radio" id="mugRadio1" value="blueBrown">
+                        <label for="mugRadio1">Blue Sky & Brown Earth (pictured)</label>
+                        <input type="radio" id="mugRadio2" value="blackIndigo">
+                        <label for="mugRadio2">Black Velvet & Indigo</label>
+                        <input type="radio" id="mugRadio3" value="greyRed">
+                        <label for="mugRadio3">Solar Grey & Oxblood</label>
+                        <p>Choose An Additional Membership Perk:</p>
+                        <select name="mugPerk" id="mugPerk">
+                            <option value="perkError">(select one)</option>
+                            <option value="merchDiscount">15% Off Merchandise</option>
+                            <option value="freeBeer">One Free Beer Each Month</option>
+                            <option value="freeFood">Free Popcorn Each Visit</option>
+                        </select>
+                    </fieldset>
+                    <fieldset id="mugComments">
+                        <legend>Additional Comments</legend>
+                        <label for="comments">Don't hold back, on that feedback</label>
+                        <textarea name="comments" id="comments" placeholder="Additional comments, like, can we sing you 'Happy Birthday?'" cols="30" rows="10"></textarea>
+                    </fieldset>
                     <div id="buttonContainer">
                         <input type="submit" value="Submit">
                         <input type="reset" value="Clear Form">
