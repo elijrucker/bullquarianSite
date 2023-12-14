@@ -3,6 +3,29 @@
     Date: 12/04/2023
 */
 
+/* 
+    - Must demonstrate the use of the float property on at least one page.
+    - All images used must be responsive. Meaning, they should scale with the viewport size.
+    - All pages must have adequate margins and or padding so content is not crowded and is legible.
+*/
+
+/* 
+    MAIN.CSS
+    - Must contain the styles for the header, footer, and navigation.
+    - Any styles that are used on each page of your site should be included in the main.css.
+*/ 
+
 body {
     background-color: turquoise; /* temp for verifying connection */
 }
+
+
+/* 
+    MAIN.CSS
+    Must include a media query for when the viewport is less than or equal to 40em (640px). Change some
+    styles, so that when the viewport is reduced to mobile phone size, the site is improved. Some ideas or
+    things you can consider:
+    • Modify the heading sizes
+    • Add or reduce margins or padding where appropriate
+    • Increase the size of links to be more "finger-friendly."
+ */

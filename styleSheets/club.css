@@ -3,6 +3,12 @@
     Date: 12/04/2023
 */
 
+/* 
+    - Must demonstrate the use of the float property on at least one page.
+    - All images used must be responsive. Meaning, they should scale with the viewport size.
+    - All pages must have adequate margins and or padding so content is not crowded and is legible.
+*/
+
 body {
     background-color: turquoise; /* temp for verifying connection */
 }
