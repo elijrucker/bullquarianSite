@@ -4,36 +4,171 @@
     Date: 12/04/2023
 -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bullquarian - Brews</title>
-    <link rel="stylesheet" href="styleSheets/main.css">
-    <link rel="stylesheet" href="styleSheets/brewGuide.css">
-</head>
-<!-- brewGuide - list of mainstay and seasonsal drinks -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bullquarian - Brews</title>
+        <link rel="stylesheet" href="styleSheets/main.css">
+        <link rel="stylesheet" href="styleSheets/brewGuide.css">
+    </head>
+    <!-- brewGuide - list of mainstay and seasonsal drinks -->
 
-<body>
-    <header>
-        <img id="bullLogo" src="images/bullLogo.png" alt="Bullquarian Logo">
-        <h1 id="indexTop">Beer & Cocktail Menu</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            &bull;
-            <a href="brewGuide.html">Drink Menu</a>
-            &bull;
-            <a href="menu.html">Food Menu</a>
-            &bull;
-            <a href="music.html">Live Music</a>
-            &bull;
-            <a href="club.html">Mug Club</a>
-            &bull;
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <figure>
+                <img src="images/storeFront.png" alt="Bullquarian Brewhouse Storefront">
+                <figcaption>
+                    Image Source: <a href="https://deadshotclub.com/images/breweries/2022-01-14_13h25_42.png">DeadShot Club</a>
+                </figcaption>
+            </figure>
+            <h1 id="indexTop">Bullquarian Brewhouse</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                &bull;
+                <a href="brewGuide.html">Drink Menu</a>
+                &bull;
+                <a href="menu.html">Food Menu</a>
+                &bull;
+                <a href="music.html">Live Music</a>
+                &bull;
+                <a href="club.html">Mug Club</a>
+                &bull;
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-    <main>
+        <main>
+            <!--
+                BUSINESS OWNER REQUEST:
+                Business owner looking for method to update drink/beer menus that requires minimal site interaction, consider img elements for cocktail menu as well as beer menu.
+            -->
+            <!-- 
+                FUTURE PROJECT: 
+                Create GUI portal, or simplified solution (pointer to image variables) so business owner can update menus without dedicated webdev or admin present.
+            -->
 
-    </main>
-</body>
+            <figure id="draftMenu">
+                <img src="images/draftBeerMenu.jpg" alt="Draft Beer Menu">
+                <figcaption>
+                    Image Source: <a href="https://www.facebook.com/Bullquarianbrewhouse/menu/?id=100042601044430&sk=menu
+                    ">Bullquarian Brewhouse LLC - Facebook</a>
+                </figcaption>
+            </figure>
+
+            <!-- 
+                BACKUP CODE IN CASE MENU IMAGE NOT AVAILABLE
+
+                <section id="beerMenuManual">
+                <h1>Bullquarian Beer Menu</h1>
+                <article id="blonde">
+                    <h2>Bullquarian Blonde</h2>
+                    <img src="images/" alt="Bullquarian Blonde">
+                    <p>
+                        Blonde ale
+                    </p>
+                </article>
+                <article id="ervsDark">
+                    <h2>Erv's Dark</h2>
+                    <img src="images/" alt="Erv's Dark">
+                    <p>
+                        Schwarzbier 
+                    </p>
+                </article>
+                <article id="hibbysWitt">
+                    <h2>Hibby's Witt</h2>
+                    <img src="images/" alt="Hibby's Witt">
+                    <p>
+                        Belgian wheat
+                    </p>
+                </article>
+                <article id="doubleDime">
+                    <h2>Double Dime Pre-Prohibition Lager</h2>
+                    <img src="images/" alt="Double Dime Pre-Prohibition Lager">
+                    <p>
+                        A light lager with floral notes
+                    </p>
+                </article>
+                <article id="tepache">
+                    <h2>Tepache Del Toro</h2>
+                    <img src="images/" alt="Tepache Del Toro">
+                    <p>
+                        A medium bodied beer brewed with brown sugar and pineapple
+                    </p>
+                </article>
+                <article id="pearBear">
+                    <h2>Pear Bear</h2>
+                    <img src="images/" alt="Pear Bear">
+                    <p>
+                        A fruity pear saison
+                    </p>
+                </article>
+                <article id="fatback">
+                    <h2>Fatback's IPA</h2>
+                    <img src="images/" alt="Fatback's IPA">
+                    <p>
+                        Our take on a traditional IPA
+                    </p>
+                </article>
+                <article id="eventHorizon">
+                    <h2>Event Horizon</h2>
+                    <img src="images/" alt="Event Horizon Black IPA">
+                    <p>
+                        A black IPA dark as night and smooth as satin.
+                    </p>
+                </article>
+                <article id="courtHouseRed">
+                    <h2>Court House Red Ale</h2>
+                    <img src="images/" alt="Court House Red Ale">
+                    <p>
+                        A red ale as grand as it's namesake.
+                    </p>
+                </article>
+                <article id="wazy">
+                    <h2>Wazy IPA</h2>
+                    <img src="images/" alt="Wazy IPA">
+                    <p>
+                        A hazy IPA popping with citrus.
+                    </p>
+                </article>
+            </section>
+            <section id="cocktails">
+                <h2>Cocktails of the Month</h2>
+                <article id="jumpinJackFrost">
+                    <h3>Jumpin' Jack Frost</h3>
+                    <img src="images/" alt="Jumpin' Jack Frost">
+                    <p>
+                        A creamy coffee n' nutmeg treat.
+                    </p>
+                </article>
+                <article id="mistletoeMimosa">
+                    <h3>Mistletoe Mimosa</h3>
+                    <img src="images/" alt="Mistletoe Mimosa">
+                    <p>
+                        A mimosa with a holiday twist.
+                    </p>
+                </article>
+            </section>
+            -->
+
+            <figure id="flightPromo">
+                <h2>We sell beer in flights!</h2>
+                <img src="images/beerFlight.jpeg" alt="Flight of Beer">
+                <figcaption>
+                    Image Source: <a href="https://www.facebook.com/photo.php?fbid=754055866024441&set=pb.100042601044430.-2207520000&type=3">Bullquarian Brewhouse LLC - Facebook</a>
+                </figcaption>
+            </figure>
+
+            <figure id="otherDrinks">
+                <img src="images/otherDrinks.jpg" alt="Other Drinks">
+                <figcaption>
+                    Image Source: <a href="https://www.facebook.com/photo.php?fbid=754055866024441&set=pb.100042601044430.-2207520000&type=3">Bullquarian Brewhouse LLC - Facebook</a>
+                </figcaption>
+            </figure>
+
+        </main>
+        <footer>
+            <a id="businessContact" href="contact.html">Hours and Location</a>
+            <address>Developed By:<a href="mailto:erucker1@madisoncollege.edu">erucker1@madisoncollege.edu</a></address>
+        </footer>
+    </body>
 </html>

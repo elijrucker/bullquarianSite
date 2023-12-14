@@ -4,36 +4,90 @@
     Date: 12/04/2023
 -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styleSheets/main.css">
-    <link rel="stylesheet" href="styleSheets/contact.css">
-</head>
-<!-- Contact Us - Must include a form for questions and comments, can be named differently -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="styleSheets/main.css">
+        <link rel="stylesheet" href="styleSheets/contact.css">
+    </head>
+    <!-- Contact Us - Must include a form for questions and comments, can be named differently -->
 
-<body>
-    <header>
-        <img id="bullLogo" src="images/bullLogo.png" alt="Bullquarian Logo">
-        <h1 id="indexTop">Stop On By!</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            &bull;
-            <a href="brewGuide.html">Drink Menu</a>
-            &bull;
-            <a href="menu.html">Food Menu</a>
-            &bull;
-            <a href="music.html">Live Music</a>
-            &bull;
-            <a href="club.html">Mug Club</a>
-            &bull;
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <figure>
+                <img src="images/storeFront.png" alt="Bullquarian Brewhouse Storefront">
+                <figcaption>
+                    Image Source: <a href="https://deadshotclub.com/images/breweries/2022-01-14_13h25_42.png">DeadShot Club</a>
+                </figcaption>
+            </figure>
+            <h1 id="indexTop">Bullquarian Brewhouse</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                &bull;
+                <a href="brewGuide.html">Drink Menu</a>
+                &bull;
+                <a href="menu.html">Food Menu</a>
+                &bull;
+                <a href="music.html">Live Music</a>
+                &bull;
+                <a href="club.html">Mug Club</a>
+                &bull;
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-    <main>
+        <main>
+            <section id="location">
+                <h2>Bullquarian Brewhouse, LLC</h2>
+                <p>1128 17th Avenue, Monroe, WI 53566</p>
+                <a href="tel:+16084266720">Phone: (608) 426-6720</a>
+            </section>
 
-    </main>
-</body>
+            <!-- move CSS for iframe into styleSheet -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.8788142286635!2d-89.64101458703445!3d42.60031461976688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807dec4bbf476af%3A0x39d7108f8d7db915!2sBullquarian%20Brewhouse!5e0!3m2!1sen!2sus!4v1702399358147!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- move CSS for iframe into styleSheet -->
+
+            <section id="hours">
+                <h2>Bar Hours</h2>
+                <figure>
+                    <img src="images/bullLogo.png" alt="Bullquarian Brewhouse Logo">
+                    <figcaption>
+                        Image Source: <a href="https://www.facebook.com/photo/?fbid=745490026881025&set=a.745489993547695">Bullquarian Brewhouse LLC - Facebook</a>
+                    </figcaption>
+                </figure>
+                <p>Wed: - Fri: 4:00pm to 10:00pm</p>
+                <p>Sat: 4:00pm to 10:00pm</p>
+                <p>Sun: 12:00pm to 4:00pm</p>
+                <p>Last Call Wed - Sat: 9:30pm</p>
+            </section>
+
+            <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                <h2>Take <em>The Bull</em> by the horns!</h2>
+                
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" required>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Questions, comments, concerns?" cols="30" rows="10" required></textarea>
+
+                <div id="buttonContainer">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear Form">
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <a id="businessContact" href="contact.html">Hours and Location</a>
+            <address>Developed By:<a href="mailto:erucker1@madisoncollege.edu">erucker1@madisoncollege.edu</a></address>
+        </footer>
+    </body>
 </html>

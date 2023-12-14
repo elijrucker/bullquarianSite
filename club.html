@@ -4,36 +4,76 @@
     Date: 12/04/2023
 -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bullquarian - Mug Club</title>
-    <link rel="stylesheet" href="styleSheets/main.css">
-    <link rel="stylesheet" href="styleSheets/club.css">
-</head>
-<!-- Join Us - Must include a form for users to join the group or organization, can be named differently -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bullquarian - Mug Club</title>
+        <link rel="stylesheet" href="styleSheets/main.css">
+        <link rel="stylesheet" href="styleSheets/club.css">
+    </head>
+    <!-- Join Us - Must include a form for users to join the group or organization, can be named differently -->
 
-<body>
-    <header>
-        <img id="bullLogo" src="images/bullLogo.png" alt="Bullquarian Logo">
-        <h1 id="indexTop">Bullquarian Mug Club</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            &bull;
-            <a href="brewGuide.html">Drink Menu</a>
-            &bull;
-            <a href="menu.html">Food Menu</a>
-            &bull;
-            <a href="music.html">Live Music</a>
-            &bull;
-            <a href="club.html">Mug Club</a>
-            &bull;
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <figure>
+                <img src="images/storeFront.png" alt="Bullquarian Brewhouse Storefront">
+                <figcaption>
+                    Image Source: <a href="https://deadshotclub.com/images/breweries/2022-01-14_13h25_42.png">DeadShot Club</a>
+                </figcaption>
+            </figure>
+            <h1 id="indexTop">Bullquarian Brewhouse</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                &bull;
+                <a href="brewGuide.html">Drink Menu</a>
+                &bull;
+                <a href="menu.html">Food Menu</a>
+                &bull;
+                <a href="music.html">Live Music</a>
+                &bull;
+                <a href="club.html">Mug Club</a>
+                &bull;
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-    <main>
+        <main>
+            <section id="mugClub">
+                <h2>Join Our Mug Club!</h2>
+                <figure>
+                    <img src="images/mug.jpeg" alt="Bullquarian Mug">
+                    <figcaption>
+                        Image Source: <a href="https://www.facebook.com/photo.php?fbid=962915375138488&set=pb.100042601044430.-2207520000&type=3">Bullquarian Brewhouse LLC - Facebook</a>
+                    </figcaption>
+                </figure>
+                <p id="clubTag">
+                    Are you a beer-loving enthusiast?<br>
+                    Are you looking for a home away from home?<br>
+                    Look no further, fill out a quick application and all your wishes will come true!<br>
+                </p>
+                <p id="punchLine">
+                    Or at least those that can be fulfilled with beer.
+                </p>
+                <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="name" id="email" required>
+                    <label for="dob">Birthday</label>
+                    <input type="date" id="dob" name="dob">
+                    <label for="comments">Additional Comments</label>
+                    <textarea name="comments" id="comments" placeholder="Additional comments, like, can we sing you 'Happy Birthday?'" cols="30" rows="10"></textarea>
 
-    </main>
-</body>
+                    <div id="buttonContainer">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear Form">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <a id="businessContact" href="contact.html">Hours and Location</a>
+            <address>Developed By:<a href="mailto:erucker1@madisoncollege.edu">erucker1@madisoncollege.edu</a></address>
+        </footer>
+    </body>
 </html>
