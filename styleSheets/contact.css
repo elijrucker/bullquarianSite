@@ -13,8 +13,8 @@
 #location, #hours {
     font-size: 1.15rem;
     width: 40%;
-    padding: 1rem;
-    margin: auto;
+    padding: 2rem;
+    margin: 2em auto;
     text-align: center;
     color: #32292F;
     background-color: #F3EAE2;
@@ -22,21 +22,8 @@
     border-radius: .25rem;
 }
 
-#location {
-    margin-top: 2em;
-}
-
-#hours {
-    margin-bottom: 2em;
-}
-
 #hours figcaption {
     font-size: .75em;
-}
-
-iframe {
-    width: 100%;
-    padding: 2em 0;
 }
 
 form {
