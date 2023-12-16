@@ -40,6 +40,7 @@ iframe {
 }
 
 form {
+    font-size: 1.15em;
     text-align: center;
     width: 50%;
     max-width: 800px;
@@ -48,8 +49,8 @@ form {
     margin-bottom: 2em;
     color: #32292F;
     background-color: #F3EAE2;
-    border: 2px solid #32292F;
-    border-radius: .25rem;
+    border: 2px solid #C17C74;
+    border-radius: .5rem;
 }
 
 #contactID label, #contactID input{

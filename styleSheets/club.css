@@ -26,12 +26,11 @@ fieldset {
 
 #mugClub figure {
     float: right;
-    width: 40%;
+    width: 30%;
     max-width: 800px;
     border: 2px solid #32292F;
     border-radius: .25rem;
-    padding: .15rem;
-    margin: 2rem;
+    margin-top: 15%;
 }
 
 #mugClub img {
