@@ -16,7 +16,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #F9F5F1;
 }
 
 /* 
@@ -24,13 +23,11 @@ body {
     - Fonts used by business owner for business sign are 'Aardvark Cafe' for 'Bullquarian' and 'Arial Narrow' for 'Brewhouse'. Font only avialable as font file, will update header with specific fonts as secondary project.
 */
 header {
-    width: 100%;
     display: block;
     text-align: center;
-    font-size: 1.25rem;
     background-color: #0C7489;
     color: #32292F;
-    text-shadow: 1px 1px #C17C74;
+    text-shadow: 1px 1px #C17c74;
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-top: solid 4px #32292F;
@@ -38,15 +35,9 @@ header {
 }
 
 header img {
-    width: 80%;
     max-width: 1000px;
     border: solid 2px #32292F;
-    border-radius: .25rem;
     margin: 1em;
-}
-
-header figcaption {
-    font-size: .75em;
 }
 
 header figcaption a {
@@ -55,35 +46,31 @@ header figcaption a {
     font-style: italic;
 }
 
-#siteNav {
+header nav {
     padding: 1rem;
     font-weight: 600;
 }
 
 #siteNav a {
     color: #32292F;
-    text-decoration: underline;
-    margin: .75em;
+    text-decoration: none;
 }
 
 #siteNav a:hover {
         color: #BCAC9B;
-        text-decoration: underline;
 }
 
-#bottomFooter {
+footer {
     width: 100%;
     color: #32292F;
     background-color: #0C7489;
-    margin: auto;
-    padding: 1rem;
+    padding: 1.5rem;
     border-top: .25rem solid #BCAC9B;
 }
 
 footer address {
     text-align: right;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
+    padding-right: 3em;
     color: #32292F;
 }
 
@@ -117,28 +104,4 @@ footer a:hover {
 
  @media (max-width: 640px) {
     
-    header {
-        font-size: 1em;
-    }
-
-    #siteNav a {
-        width: 40%;
-        display: inline-block;
-        margin: auto;
-        padding: .75em;
-        font-size: 1.15em;
-        border: 2px solid #32292F;
-        border-radius: .25em;
-        background-color: #00BBCC;
-    }
-
-    #siteNav a:hover {
-        background-color: #BCAC9B;
-        color: #32292F;
-    }
-
-    #businessContact {
-        font-size: 1.15em;
-        display: inline-block;
-    }
  }

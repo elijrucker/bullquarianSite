@@ -9,6 +9,47 @@
     - All pages must have adequate margins and or padding so content is not crowded and is legible.
 */
 
-body {
-    background-color: turquoise; /* temp for verifying connection */
+#pizzaMenu, #snackMenu {
+    font-size: 1.15rem;
+    width: 95%;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
 }
+
+#pizzaMenu img {
+    width: 100%;
+    max-width: 1000px;
+    border: 2px solid #32292F;
+    border-radius: .25rem;
+    padding: .15rem;
+}
+
+#snackMenu dl {
+    width: 80%;
+    max-width: 1000px;
+    text-align: left;
+    padding: 2em;
+    margin: auto;
+    border-radius: 1em;
+    border: 2px solid #32292F;
+}
+
+#snackMenu dt {
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+    #pizzaMenu, #snackMenu {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    #snackMenu {
+        padding-bottom: 2rem;
+    }
+ }

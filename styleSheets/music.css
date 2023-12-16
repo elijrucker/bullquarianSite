@@ -9,6 +9,39 @@
     - All pages must have adequate margins and or padding so content is not crowded and is legible.
 */
 
-body {
-    background-color: turquoise; /* temp for verifying connection */
+#liveMusic, #openMic {
+    font-size: 1.15rem;
+    width: 95%;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+}
+
+p {
+    width: 70%;
+    margin: auto;
+}
+
+#liveMusic img {
+    width: 100%;
+    max-width: 1000px;
+    border: 2px solid #32292F;
+    border-radius: .25rem;
+    padding: .15rem;
+}
+
+#openMic img {
+    width: 60%;
+    max-width: 1000px;
+    border: 2px solid #32292F;
+    border-radius: .25rem;
+    padding: .15rem;
+}
+
+@media (max-width: 640px) {
+    #liveMusic, #openMic {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0;    
+    }
 }

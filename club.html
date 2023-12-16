@@ -25,17 +25,12 @@
                 </figcaption>
             </figure>
             <h1 id="indexTop">Bullquarian Brewhouse</h1>
-            <nav>
+            <nav id="siteNav">
                 <a href="index.html">Home</a>
-                &bull;
                 <a href="brewGuide.html">Drink Menu</a>
-                &bull;
                 <a href="menu.html">Food Menu</a>
-                &bull;
                 <a href="music.html">Live Music</a>
-                &bull;
                 <a href="club.html">Mug Club</a>
-                &bull;
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
@@ -58,13 +53,7 @@
             
             <section id="mugClub">
                 <h2>Join Our Mug Club!</h2>
-                <figure>
-                    <img src="images/mug.jpeg" alt="Bullquarian Mug">
-                    <figcaption>
-                        Image Source: <a href="https://www.facebook.com/photo.php?fbid=962915375138488&set=pb.100042601044430.-2207520000&type=3">Bullquarian Brewhouse LLC - Facebook</a>
-                    </figcaption>
-                </figure>
-                 <p id="clubTag">
+                <p id="clubTag">
                     Are you a beer-loving enthusiast?<br>
                     Are you looking for a home away from home?<br>
                     Look no further, fill out a quick application, join our Mug Club, and all your wishes will come true!<br>
@@ -72,6 +61,13 @@
                 <p id="punchLine">
                     Or at least those that can be fulfilled with beer.
                 </p>
+                <figure>
+                    <img src="images/mug.jpeg" alt="Bullquarian Mug">
+                    <figcaption>
+                        Image Source: <a href="https://www.facebook.com/photo.php?fbid=962915375138488&set=pb.100042601044430.-2207520000&type=3">Bullquarian Brewhouse LLC - Facebook</a>
+                    </figcaption>
+                </figure>
+                
                 <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
                     <fieldset id="mugID">
                         <legend>Personal Information</legend>
@@ -89,12 +85,12 @@
                         <input type="checkbox" id="mugCheck2" value="autoRenew">
                         <label for="mugCheck2">Automatic Annual Renewal</label>
                         <p>Mug Motif (choose one):</p>
-                        <input type="radio" id="mugRadio1" value="blueBrown">
-                        <label for="mugRadio1">Blue Sky & Brown Earth (pictured)</label>
-                        <input type="radio" id="mugRadio2" value="blackIndigo">
+                        <input type="radio" name="mugMotif" id="mugRadio1" value="blueBrown">
+                        <label for="mugRadio1">Blue & Brown (pictured)</label>
+                        <input type="radio" name="mugMotif" id="mugRadio2" value="blackIndigo">
                         <label for="mugRadio2">Black Velvet & Indigo</label>
-                        <input type="radio" id="mugRadio3" value="greyRed">
-                        <label for="mugRadio3">Solar Grey & Oxblood</label>
+                        <input type="radio" name="mugMotif" id="mugRadio3" value="greyRed">
+                        <label for="mugRadio3">Solar Grey & Red</label>
                         <p>Choose An Additional Membership Perk:</p>
                         <select name="mugPerk" id="mugPerk">
                             <option value="perkError">(select one)</option>
@@ -115,7 +111,7 @@
                 </form>
             </section>
         </main>
-        <footer>
+        <footer id="bottomFooter">
             <a id="businessContact" href="contact.html">Hours and Location</a>
             <address>Developed By:<a href="mailto:erucker1@madisoncollege.edu">erucker1@madisoncollege.edu</a></address>
         </footer>

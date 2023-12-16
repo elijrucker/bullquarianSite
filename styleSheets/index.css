@@ -9,6 +9,67 @@
     - All pages must have adequate margins and or padding so content is not crowded and is legible.
 */
 
-body {
-    background-color: turquoise; /* temp for verifying connection */
+#bio {
+    width: 80%;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
 }
+
+#bio img {
+    width: 80%;
+    margin: 1rem;
+    border: 2px solid #32292F;
+    border-radius: .25rem;
+}
+
+#bio h2 {
+    text-shadow: 1px 2px #C17C74;
+}
+
+#bio blockquote {
+    width: 60%;
+    font-size: 1.25rem;
+    margin: auto;
+    padding: 2rem;
+    border: 2px solid #32292F;
+    border-radius: 2rem;
+    background-color: #F3EAE2;
+}
+
+#specials {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#specials h2 {
+    padding: 4rem;
+    font-size: 3rem;
+    text-decoration: underline;
+    text-shadow: 1px 2px #C17C74;
+}
+
+#specials img {
+    width: 75%;
+    padding: .5rem;
+    border: 5px solid #32292F;
+    border-radius: .25rem;
+    margin: auto;
+}
+
+
+@media (max-width: 640px) {
+    #bio blockquote {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    #specials h2 {
+        font-size: 2rem;
+    }
+
+    #specials img {
+        width: 100%;
+    }
+ }

@@ -9,6 +9,89 @@
     - All pages must have adequate margins and or padding so content is not crowded and is legible.
 */
 
-body {
-    background-color: turquoise; /* temp for verifying connection */
+
+#location, #hours {
+    font-size: 1.15rem;
+    width: 40%;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    color: #32292F;
+    background-color: #F3EAE2;
+    border: 2px solid #32292F;
+    border-radius: .25rem;
 }
+
+#location {
+    margin-top: 2em;
+}
+
+#hours {
+    margin-bottom: 2em;
+}
+
+#hours figcaption {
+    font-size: .75em;
+}
+
+iframe {
+    width: 100%;
+    padding: 2em 0;
+}
+
+form {
+    text-align: center;
+    width: 50%;
+    max-width: 800px;
+    padding: 3em;
+    margin: auto;
+    margin-bottom: 2em;
+    color: #32292F;
+    background-color: #F3EAE2;
+    border: 2px solid #32292F;
+    border-radius: .25rem;
+}
+
+#contactID label, #contactID input{
+    margin: 1em;
+}
+
+input[type="submit"], input[type="reset"] {
+    display: inline-block;
+    border: 2px solid #C17C74;
+    border-radius: .5em;
+    padding: 1em;
+    margin: 1em;
+    font-weight: bold;
+    color: #32292F;
+ }
+
+ input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #C17C74;
+    color: white;
+ }
+
+ div#buttonContainer {
+    text-align: center;
+ }
+
+ @media (max-width: 640px) {
+    
+    #hours figure{
+        display: none;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    form input, textarea {
+        margin: 1.5em;
+        padding: 1.5em;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        margin: 2em;
+        padding: 2em;
+    }
+ }

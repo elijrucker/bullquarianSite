@@ -9,6 +9,116 @@
     - All pages must have adequate margins and or padding so content is not crowded and is legible.
 */
 
-body {
-    background-color: turquoise; /* temp for verifying connection */
+#mugClub {
+    width: 90%;
+    font-size: 1.15rem;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
 }
+
+fieldset {
+    color: #32292F;
+    margin: 1rem;
+    border-radius: .5em;
+    border: 2px solid #C17C74;
+}
+
+#mugClub figure {
+    float: right;
+    width: 40%;
+    max-width: 800px;
+    border: 2px solid #32292F;
+    border-radius: .25rem;
+    padding: .15rem;
+    margin: 2rem;
+}
+
+#mugClub img {
+    width: 100%;
+}
+
+#mugClub form {
+    float: left;
+    width: 40%;
+    max-width: 800px;
+    text-align: left;
+    padding: 5rem;
+    padding-top: 1rem;
+}
+
+#mugID label {
+    display: block;
+}
+
+#mugPreferences label, #mugPerk {
+    padding: .5em;
+    margin: auto;
+    text-align: center;
+}
+
+#mugPreferences input[type="radio"] {
+    width: 40%;
+    height: 1em;
+    margin: 1em auto;
+}
+
+#mugComments {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="submit"], input[type="reset"] {
+    display: inline-block;
+    border: 2px solid #C17C74;
+    border-radius: .5em;
+    padding: 1em;
+    margin: 1em;
+    font-weight: bold;
+    color: #32292F;
+ }
+ 
+ input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #C17C74;
+    color: white;
+ }
+ 
+ div#buttonContainer {
+    text-align: center;
+ }
+
+#bottomFooter {
+    clear: both;
+}
+
+@media (max-width: 640px) {
+    
+    #mugClub figure{
+        display: none;
+    }
+
+    #mugClub form {
+        width: 90%;
+    }
+
+    form input {
+        margin: 2em;
+    }
+
+    #mugPreferences input[type="checkbox"] {
+        margin: 4em;
+    }
+
+    #mugPreferences input[type="radio"] {
+        width: 10%;
+        padding: 5em;
+        height: 2em;
+        margin: 4em;
+    }
+
+    input[type="submit"], input[type="reset"], textarea {
+        padding: 2em;
+        margin: 2em;
+    }      
+ }

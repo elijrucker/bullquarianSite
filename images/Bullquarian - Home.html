@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5501/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bullquarian - Home</title>
+        <link rel="stylesheet" href="./Bullquarian - Home_files/main.css">
+        <link rel="stylesheet" href="./Bullquarian - Home_files/index.css">
+    </head>
+    <!-- 
+        HOMEPAGE 
+        Must include and overview of the group or organization with images, must be index.html 
+    -->
+
+    <body data-new-gr-c-s-check-loaded="14.1146.0" data-gr-ext-installed="">
+        <header>
+            <figure>
+                <img src="./Bullquarian - Home_files/storeFront.png" alt="Bullquarian Brewhouse Storefront">
+                <figcaption>
+                    Image Source: <a href="https://deadshotclub.com/images/breweries/2022-01-14_13h25_42.png">DeadShot Club</a>
+                </figcaption>
+            </figure>
+            <h1 id="indexTop">Bullquarian Brewhouse</h1>
+            <nav id="siteNav">
+                <a href="http://127.0.0.1:5501/index.html">Home</a>
+                •
+                <a href="http://127.0.0.1:5501/brewGuide.html">Drink Menu</a>
+                •
+                <a href="http://127.0.0.1:5501/menu.html">Food Menu</a>
+                •
+                <a href="http://127.0.0.1:5501/music.html">Live Music</a>
+                •
+                <a href="http://127.0.0.1:5501/club.html">Mug Club</a>
+                •
+                <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            
+            <!-- 
+                HOMEPAGE
+                - Must contain at least one image (which is responsive).
+                - Provide content describing the organization's or group's purpose.
+            -->
+            
+            <section id="bio">
+                <figure>
+                    <img src="./Bullquarian - Home_files/bullHeader.jpeg" alt="Bullquarian flight and pizza">
+                    <figcaption>
+                        Image Source: <a href="https://www.facebook.com/photo/?fbid=745490023547692&amp;set=a.745489986881029">Bullquarian Brewhouse LLC - Facebook</a>
+                    </figcaption>
+                </figure>
+                <h2>Who We Are</h2>
+                <blockquote>
+                    <p>
+                        "* Locally owned 2-barrel Nano Brewery serving freshly brewed beer available primarily in our taproom. * One of two breweries in Monroe, WI and only the third brewery in Green County. * Flights, pints, and growlers are available. At least 10 different beers on tap. * All beer is manufactured on site and is available at retail and wholesale. * Freshly made pizza, Vienna Beef hot dogs, garlic cheese bread, meatball sammies. * Live music, open jams, and other entertainment make us a destination you won’t want to miss."
+
+                    </p>
+                    <footer>
+                        <cite>
+                            Bullquarian Brewhouse, LLC <em>Google Business Page</em>
+                        </cite>
+                    </footer>
+                </blockquote>
+            </section>
+            
+            <section id="specials">
+                <h2>Monthly Specials</h2>
+                <figure>
+                    <img src="./Bullquarian - Home_files/monthlySpecials.jpg" alt="Monthly Specials">
+                    <figcaption>
+                        Image Source: <a href="https://www.facebook.com/Bullquarianbrewhouse/menu/?id=100042601044430&amp;sk=menu">Bullquarian Brewhouse LLC - Facebook</a>
+                    </figcaption>
+                </figure>
+            </section>
+            
+            <!--
+                TIER 2 - FURTHER CONTENT FOR FUTURE USE
+                - Include embedded business intro video
+                - Added stylized links to social media
+                <figure>
+                    <img src="images/beerGlassBull.jpeg" alt="Bullquarian glass with a bull figurine">
+                    <figcaption>
+                        Image Source: <a href="https://www.facebook.com/photo/?fbid=2799370786943302&set=pb.100042601044430.-2207520000">Bullquarian Brewhouse LLC - Facebook</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cocktailBar.jpeg" alt="Bullquarian cocktail">
+                    <figcaption>
+                        Image Source: <a href="https://www.facebook.com/photo.php?fbid=1027350625361629&set=pb.100042601044430.-2207520000&type=3">Bullquarian Brewhouse LLC - Facebook</a>
+                    </figcaption>
+                </figure>
+            -->
+        </main>
+        <footer>
+            <a id="businessContact" href="http://127.0.0.1:5501/contact.html">Hours and Location</a>
+            <address>Developed By:<a href="mailto:erucker1@madisoncollege.edu">erucker1@madisoncollege.edu</a></address>
+        </footer>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
