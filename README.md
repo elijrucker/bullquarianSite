@@ -2,7 +2,7 @@
 
 ## Overview
 A reactive website for the local microbrewery [Bullquarian Brewhouse](https://g.co/kgs/qDyiLS2).  
-The first iteration is a rough draft providing proof of concept, further iterations will include social media integration and a mobile-first emphasis. 
+The first iteration is a rough draft providing proof of concept, further iterations will include social media integration, a mobile-first emphasis, and backend integrations.
 
 ## Contents
 - [Main landing page](https://github.com/elijrucker/bullSite/blob/main/index.html)
