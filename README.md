@@ -1,4 +1,4 @@
-# bullSite
+# Bullquarian Brewhouse — Frontend MVP
 
 ## Overview
 A responsive frontend website built for Bullquarian Brewhouse, a craft brewery in Monroe, Wisconsin. 
